@@ -39,7 +39,7 @@ Install-Package Lazy.FileServer.Server -Version 1.0.0
 ```
 
 ``` c#
-builder.Services.AddSimpleFileServer(builder.Configuration);
+builder.Services.AddLazyFileServer(builder.Configuration);
 app.UseSimpleFileServer("/");
 ```
 
@@ -71,7 +71,7 @@ public class CustomFilePathCalculator : IFilePathCalculator
 
 - 注入服务
 ``` c#
-builder.Services.AddScoped<IFilePathCalculator, CustomFilePathCalculator>();
+builder.Services.AddLazyFileServer(builder.Configuration).AddFilePathCalculator<CustomFilePathCalculator>();
 ```
 
 - 修改配置
@@ -100,7 +100,7 @@ public class CustomAppFinder : IAppFinder
 
 - 替换默认服务
 ``` c#
-builder.Services.AddSimpleFileServer(builder.Configuration).ReplaceAppFinder<CustomAppFinder>();
+builder.Services.AddLazyFileServer(builder.Configuration).ReplaceAppFinder<CustomAppFinder>();
 ```
 
 ### 客户端
