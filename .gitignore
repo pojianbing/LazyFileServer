@@ -3,3 +3,15 @@
 ################################################################################
 
 /LazyFileServer/.vs
+/LazyFileServer/Lazy.FileServer.Client/bin/Debug/netstandard2.0
+/LazyFileServer/Lazy.FileServer.Client/obj
+/LazyFileServer/Lazy.FileServer.Client.WebApi.Host/bin/Debug/net6.0
+/LazyFileServer/Lazy.FileServer.Client.WebApi.Host/obj
+/LazyFileServer/Lazy.FileServer.Server/bin/Debug/netstandard2.0
+/LazyFileServer/Lazy.FileServer.Server/obj
+/LazyFileServer/Lazy.FileServer.Server.Host/bin/Debug/net6.0
+/LazyFileServer/Lazy.FileServer.Server.Host/obj
+/LazyFileServer/Lazy.FileServer.Client.WebApi.Host/bin/Release/net6.0
+/LazyFileServer/Lazy.FileServer.Client/bin/Release
+/LazyFileServer/Lazy.FileServer.Server/bin/Release
+/LazyFileServer/Lazy.FileServer.Server.Host/bin/Release/net6.0
