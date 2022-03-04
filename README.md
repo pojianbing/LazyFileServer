@@ -1,6 +1,9 @@
 # Lazy FileServer
 非常简单的文件服务，仅实现上传然后生成url。
 
+[ **码云地址** ](https://gitee.com/pojianbing/lazy-fileserver)
+[ **Github地址** ](https://github.com/pojianbing/lazy-fileserver)
+
 ### 服务端
 服务端提供统一接口，以便各子应用统一上传文件。
 
