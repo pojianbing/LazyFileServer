@@ -6,7 +6,7 @@
 
 #### 1. 安装
 ```
-Install-Package TianHua.FileServer.Server -Version 1.0.1
+Install-Package Lazy.FileServer.Server -Version 1.0.0
 ```
 
 #### 2. 配置
@@ -108,7 +108,7 @@ builder.Services.AddSimpleFileServer(builder.Configuration).ReplaceAppFinder<Cus
 
 #### 1. 安装
 ```
-Install-Package TianHua.FileServer.Client -Version 1.0.1
+Install-Package Lazy.FileServer.Client -Version 1.0.0
 ```
 
 #### 2. 示例
@@ -116,7 +116,7 @@ Install-Package TianHua.FileServer.Client -Version 1.0.1
 ``` c#
 using Microsoft.AspNetCore.Mvc;
 
-namespace TianHua.FileServer.Client.WebApi.Host.Controllers
+namespace Lazy.FileServer.Client.WebApi.Host.Controllers
 {
     [ApiController]
     public class FileController : ControllerBase
