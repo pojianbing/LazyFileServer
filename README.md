@@ -103,12 +103,6 @@ public class CustomAppFinder : IAppFinder
 builder.Services.AddSimpleFileServer(builder.Configuration).ReplaceAppFinder<CustomAppFinder>();
 ```
 
-#### 5.可能遇到的问题
-访问图片服务时报错 **请求筛选模块被配置为拒绝包含双重转义序列的请求**
-![Image text](http://git.kjjl100.com/pojianbing/tianhua_fileserver/-/raw/main/imgs/1.png)
-解决办法： 设置requestFiltering allowDoubleEscaping="True"/
-![Image text](http://git.kjjl100.com/pojianbing/tianhua_fileserver/-/raw/main/imgs/2.png)
-
 ### 客户端
 前端应用理论上可以直接调用服务的上传接口，但这样会将appid,AppKey裸露在外界。因此需要各应用包裹下，提供一个上传端点。
 
