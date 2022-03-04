@@ -43,6 +43,8 @@ builder.Services.AddLazyFileServer(builder.Configuration);
 app.UseSimpleFileServer("/");
 ```
 
+经过简单的配置，一个上传服务已经搭建好了。本例中通过http://localhost:5001/，header设置appid,appkey即可上传。
+
 #### 3.自定义路径计算方式
 
 - 定义**IFilePathCalculator**实现类
