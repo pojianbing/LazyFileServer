@@ -146,3 +146,5 @@ namespace Lazy.FileServer.Client.WebApi.Host.Controllers
     }
 }
 ```
+
+![Alt](https://repobeats.axiom.co/api/embed/4683df92f9da8d4c18387ac1793b252575c506c9.svg "Repobeats analytics image")
