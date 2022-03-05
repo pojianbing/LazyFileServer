@@ -10,7 +10,7 @@ builder.Services.AddControllers();
 
 var app = builder.Build();
 
-app.UseSimpleFileServer("/");
+app.UseLazyFileServer("/");
 app.MapControllers();
 
 app.Run();

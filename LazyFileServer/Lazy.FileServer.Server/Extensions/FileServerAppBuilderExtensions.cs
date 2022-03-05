@@ -14,7 +14,7 @@ namespace Microsoft.AspNetCore.Builder
 {
     public static class FileServerAppBuilderExtensions
     {
-        public static IApplicationBuilder UseSimpleFileServer(this IApplicationBuilder app, string route)
+        public static IApplicationBuilder UseLazyFileServer(this IApplicationBuilder app, string route)
         {
             app.UseWhen(context => context.Request.Path.Equals(route) && context.Request.Method == HttpMethod.Post.ToString(), builder =>
             {
