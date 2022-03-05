@@ -43,7 +43,7 @@ Install-Package Lazy.FileServer.Server -Version 1.0.1
 
 ``` c#
 builder.Services.AddLazyFileServer(builder.Configuration);
-app.UseSimpleFileServer("/");
+app.UseLazyFileServer("/");
 ```
 
 经过简单的配置，一个上传服务已经搭建好了。本例中通过http://localhost:5001/，header设置appid,appkey即可上传。
