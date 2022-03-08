@@ -59,12 +59,8 @@ namespace Lazy.FileServer.Client
 
         public async Task<List<string>> UploadAsync(IEnumerable<Tuple<string, Stream>> files)
         {
-            var reponse = await serverUrl.PostMultipartAsync(mp =>
+            var reponse = await serverUrl.WithHeader("appid", appid).WithHeader("appkey", appkey).PostMultipartAsync(mp =>
             {
-                // 认证信息
-                mp.Headers.Add("appid", appid);
-                mp.Headers.Add("appkey", appkey);
-
                 foreach (var f in files)
                 {
                     mp.AddFile(f.Item1, f.Item2, f.Item1);
