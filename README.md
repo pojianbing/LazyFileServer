@@ -9,7 +9,7 @@
 
 #### 1. 安装
 ```
-Install-Package Lazy.FileServer.Server -Version 1.0.2
+Install-Package Lazy.FileServer.Server -Version 1.0.3
 ```
 
 #### 2. 配置
@@ -113,7 +113,7 @@ builder.Services.AddLazyFileServer(builder.Configuration).ReplaceAppFinder<Custo
 
 #### 1. 安装
 ```
-Install-Package Lazy.FileServer.Client -Version 1.0.2
+Install-Package Lazy.FileServer.Client -Version 1.0.3
 ```
 
 #### 2. 示例
